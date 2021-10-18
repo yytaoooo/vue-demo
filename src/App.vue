@@ -4,12 +4,18 @@
 import HelloWorld from './components/HelloWorld.vue'
 import TodoList from './components/TodoList.vue'
 import DynamicComponent from './components/DynamicComponent.vue'
+import modal from './components/modal.vue'
 </script>
 
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3 + Vite" />
-  <TodoList />
+  <TodoList>
+    <template #default="slotProps">
+      <span>logo</span>
+      <span class="red">{{slotProps.item}}</span>
+    </template>
+  </TodoList>
   <DynamicComponent />
 </template>
 
@@ -21,5 +27,8 @@ import DynamicComponent from './components/DynamicComponent.vue'
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.red {
+  color: red;
 }
 </style>

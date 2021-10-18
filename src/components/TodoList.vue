@@ -42,7 +42,6 @@
 </script>
 
 <template>
-    <a-button type="primary">Primary Button</a-button>
     <div>
         <form @submit.prevent='addNewTodo'>
             <label>
@@ -59,6 +58,11 @@
     <ul>
         <TodoItem v-for="(todo, index) in todos" :key="todo.id" :title='todo.title' @remove='todos.splice(index, 1)'>
         </TodoItem>
+    </ul>
+    <ul>
+        <li v-for="(item,index) in todos" :key="item.id">
+            <slot :item='item' v-if="index == 0"></slot>
+        </li>
     </ul>
     <a-pagination v-model:current="current" :total="50" show-less-items />
 </template>
