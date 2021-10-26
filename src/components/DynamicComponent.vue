@@ -60,7 +60,7 @@
         },
     }
 </script>
-<style>
+<style scoped>
     .content {
         width: 500px;
         height: 250px;

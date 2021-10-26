@@ -19,7 +19,7 @@ import modal from './components/modal.vue'
   <DynamicComponent />
 </template>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

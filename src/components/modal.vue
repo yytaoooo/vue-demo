@@ -37,7 +37,7 @@ export default {
     },
 }
 </script>
-<style scoped>
+<style>
     .content {
         width: auto;
         height: auto;
@@ -58,6 +58,8 @@ export default {
     .con {
         border-top: 1px solid #e2e2e2;
         border-bottom: 1px solid #e2e2e2;
+        min-width: 500px;
+        min-height: 100px;
     }
     .footer {
         display: flex;
