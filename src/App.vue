@@ -13,13 +13,12 @@ import modal from './components/modal.vue'
   <TodoList>
     <template #default="slotProps">
       <span>logo</span>
-      <span class="red">{{slotProps.item}}</span>
     </template>
   </TodoList>
   <DynamicComponent />
 </template>
 
-<style scoped>
+<style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -27,8 +26,5 @@ import modal from './components/modal.vue'
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-.red {
-  color: red;
 }
 </style>
