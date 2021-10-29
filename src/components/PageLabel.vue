@@ -84,6 +84,7 @@ export default {
     padding: 20px;
     display: flex;
     box-shadow: 2px 2px 1px #f0f0f0, -2px -2px 1px #f0f0f0;
+    background-color: #ffffff;
     &Label {
       text-align: center;
       line-height: 30px;

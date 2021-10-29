@@ -38,7 +38,4 @@ export default {};
   justify-content: center;
   padding: 20px;
 }
-.pageCon div:first-child{
-  margin-right: 20px;
-}
 </style>

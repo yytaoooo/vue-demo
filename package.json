@@ -8,11 +8,14 @@
   },
   "dependencies": {
     "ant-design-vue": "^2.2.8",
+    "less": "^4.1.2",
     "vite-plugin-components": "^0.13.3",
     "vue": "^3.2.16"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",
+    "eslint": "^8.1.0",
+    "eslint-plugin-vue": "^8.0.1",
     "vite": "^2.6.4"
   }
 }
