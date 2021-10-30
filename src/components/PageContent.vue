@@ -77,6 +77,7 @@ export default {
       }
       &:hover {
         cursor: pointer;
+        color: #007fff;
       }
       &:last-child{
         &::after{

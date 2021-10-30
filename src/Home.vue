@@ -9,7 +9,7 @@
             <page-content></page-content>
           </div>
           <div>
-            aside
+            <aside-content></aside-content>
           </div>
         </div>
     </div>
@@ -18,7 +18,7 @@
 import TopNav from "./components/TopNav.vue";
 export default {};
 </script>
-<style>
+<style lang="less" scoped>
 * {
   margin: 0;
   padding: 0;
@@ -37,5 +37,10 @@ export default {};
   display: flex;
   justify-content: center;
   padding: 20px;
+  div{
+    &:last-child {
+      margin-left: 20px;
+    }
+  }
 }
 </style>
