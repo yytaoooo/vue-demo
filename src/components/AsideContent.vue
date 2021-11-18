@@ -8,7 +8,11 @@
 </template>
 <script>
 export default {
-    
+    created() {
+        console.log('run');
+        console.log(this.$route);
+        console.log(this.$router);
+    }
 }
 </script>
 <style lang="less" scoped>
