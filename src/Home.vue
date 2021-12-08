@@ -1,4 +1,4 @@
-<template lang="">
+<template>
     <div class='page'>
         <top-nav />
         <div class='gap'></div>
@@ -16,7 +16,13 @@
 </template>
 <script>
 import TopNav from "./components/TopNav.vue";
-export default {};
+import a from './utils/calc.js'
+
+export default {
+  created() {
+    a(1, 2)
+  }
+};
 </script>
 <style lang="less" scoped>
 * {
